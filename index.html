@@ -32,11 +32,32 @@
                     <h1>Coding Quiz Challenge</h1>
                 </div>
             </div>
+
             <div class="row">
                 <div class="col-sm-12">
                     <p>Try to answer the following code-related questions within the time limit.
                         Keep in mind that incorrect answers will penalize your score/time by ten seconds!
                     </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <button id="startBtn">Start Quiz</button>
+                </div>
+            </div>
+        </section>
+
+        <!--Coding Questions Setup, using class="hide" so this will only show after the quiz has begun-->
+        <section id="quiz" class="hide">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2 id="question"></h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <button class="choice" id="A"></button>
                 </div>
             </div>
         </section>
