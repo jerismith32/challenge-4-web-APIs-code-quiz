@@ -1,0 +1,30 @@
+
+body {
+    background: "whitestone";
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: contents;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    padding: 0 10px 0 10px;
+}
+
+#startBtn {
+    display: inline-block;
+    border-radius: 12px;
+    color: purple;
+    font-size: 16px;
+}

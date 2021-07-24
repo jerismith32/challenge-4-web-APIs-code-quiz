@@ -8,7 +8,7 @@
     <!--Links to Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
     <!--Links to the external css stylesheet-->
-    <link ref="stylesheet" href="./assets/css/style.css">
+   <link rel="stylesheet" href="./assets/css/style.css">
     
 </head>
 
@@ -32,6 +32,8 @@
                     <h1>Coding Quiz Challenge</h1>
                 </div>
             </div>
+        </section>
+        <section id="instructions">
 
             <div class="row">
                 <div class="col-sm-12">
@@ -56,8 +58,33 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-12">
-                    <button class="choice" id="A"></button>
+                <div id="choices" class="col-sm-12">
+                </div>
+            </div>
+
+            <div class="row">
+                <div id="feedback" class="feebackhide"></div>
+            </div>
+        </section>
+        
+        <!--This will be where the user records their high scores upon finish the quiz-->
+        <section id="recordhighscores" class="hide">
+            <div class="row">
+                <div id="high-score" class="col-sm-12">
+                    <h3>You have completed the code quiz!</h3>
+                    <h4>Your score is <span id="finalscore">0</span></h4>
+                </div>
+            </div>
+        </section>
+
+        <!--This will show the user the high score list-->
+        <section id="highscorelist" class="hide">
+            <div class="row">
+                <div class="col-sm-12" id="list">
+                    <h2> High Scores! </h2>
+                    <div id="highscores"></div>
+                    <a href="index.html"><button id="playagain">Play Again</button></a>
+                    <button id="clear">Clear High Scores</button>
                 </div>
             </div>
         </section>
@@ -65,5 +92,6 @@
     
     <!--Links to the external javascript file-->
     <script src="./assets/js/script.js"></script>
+    <script src="assets/js/timer.js"></script>
 </body>
 </html>
