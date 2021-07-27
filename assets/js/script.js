@@ -93,7 +93,9 @@ let questions = [
       correct: "parseFloat()"
     },
     {
-
+      question: "What can be used to join several arrays into one?",
+      choices: ["concat()", "indexOf()", "join()", "lastIndexOf()"],
+      correct: "concat()"
     }
 
 ]
@@ -113,33 +115,29 @@ function displayQuiz() {
     //console.log(choices[i]);
     let btn = document.createElement("button");
     btn.innerHTML = choices[i];
+
+    btn.addEventListener("click", function(e) {
+      //console.log(e.target);
+      //console.log(questions[index].correct);
+      //console.log("e.target", e.target.value); returned empty
+      let userAnswer = e.target;
+      console.log("userAnswer", userAnswer);
+      let correctAnswer = questions[index].correct;
+      console.log("correctAnswer", correctAnswer);
+      let score = 0;
+      if (userAnswer == correctAnswer) {
+        console.log("correct!");
+        score++
+      }
+      else {
+        console.log("incorrect");
+        //Need to decrease time here. 
+      }
+      
+     });
     //This will allow the question choice options to appear
     choicesContainer.append(btn);
   }  
-
+  
 }
 
-
-
-
-// Start with a score of 0.
-var score = 0;
-
-// Loop over every question object
-// for (var i = 0; i < questions.length; i++) {
-  
-//   if (
-    
-//   ) {
-//     // Increase score
-//     score++;
-//     // Alert the user
-//     alert('Correct!');
-//   } else { 
-//     //time decrements by 10s
-//     alert('Wrong!');
-//   }
-// }
-
-// Show total at end
-alert('You got ' + score + '/' + questions.length);
