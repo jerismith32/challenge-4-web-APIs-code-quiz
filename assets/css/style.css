@@ -22,7 +22,7 @@ p {
     padding: 0 10px 0 10px;
 }
 
-#startBtn {
+button {
     display: inline-block;
     border-radius: 12px;
     color: purple;

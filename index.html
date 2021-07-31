@@ -61,10 +61,6 @@
                 <div id="choices" class="col-sm-12">
                 </div>
             </div>
-            <!--Where the Feedback will Populate-->
-            <div class="row">
-                <div id="feedback" class="feebackhide"></div>
-            </div>
         </section>
         
         <!--This will be where the user records their high scores upon finish the quiz-->
@@ -72,7 +68,7 @@
             <div class="row">
                 <div id="high-score" class="col-sm-12">
                     <h3>You have completed the code quiz!</h3>
-                    <h4>Your score is <span id="finalscore">0</span></h4>
+                    <h4>Your score is <span id="finalscore"></span></h4>
                     <input id="initials" placeholder="Enter your initial here" />
                     <button id="submit">Submit</button>
                 </div>
@@ -84,7 +80,8 @@
             <div class="row">
                 <div class="col-sm-12" id="list">
                     <h2> High Scores! </h2>
-                    <div id="highscores"></div>
+                    <div id="highscoresSaved"></div>
+                    <div id="initialsSaved"></div>
                     <a href="index.html"><button id="playagain">Play Again</button></a>
                     <button id="clear">Clear High Scores</button>
                 </div>
