@@ -31,8 +31,14 @@ THEN I can save my initials and score
 * Javascript
 
 ## Screenshots
-![]()
+Home Page of the Coding Quiz
+![Home Page of the Coding Quiz](/assets/images/HomepageQuiz.png)
 
+Quiz Question Set-Up
+![Quiz Question Set-Up](/assets/images/QuizQuestion.png)
+
+End of Quiz
+![End of Quiz](/assets/images/EndofQuiz.png)
 
 
 ## Resources/References

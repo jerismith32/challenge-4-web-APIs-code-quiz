@@ -5,7 +5,7 @@ let highScoresBtn = document.getElementById("highScoresBtn");
 let sessionScore = document.getElementById("recordhighscores");
 let highScoreList = document.getElementById("highscorelist");
 let clearHighScoreBtn = document.getElementById("clear");
-let initials = document.getElementById("initals");
+let initials = document.getElementById("initials");
 //initials.value will capture the input value of the user
 let currentScore = document.getElementById("finalscore");
 let currentScoreSubmitBtn = document.getElementById("submit");
@@ -173,7 +173,6 @@ highScoresBtn.addEventListener('click', function (event) {
   if (highscoreSaved === null || initalsSaved === null) {
     return;
   }
-
   highscoresSavedDiv.textContent = highscoreSaved;
   initialsSavedDiv.textContent = initialsSaved;
 
@@ -193,9 +192,10 @@ function endQuiz() {
   //This will end the timer
   clearInterval(timerCountDown);
   currentScoreSubmitBtn.addEventListener('click', function (event) {
+    let initials = document.getElementById("initials");
     localStorage.setItem('score', score);
-    //let saveInitials = initials.value;
-    console.log('initials', initials.value);
-    localStorage.setItem('initials', initials);
+    let saveInitials = initials.value;
+    console.log('initials', saveInitials);
+    localStorage.setItem('initials', saveInitials);
   })
 }
