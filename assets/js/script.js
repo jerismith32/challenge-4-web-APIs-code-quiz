@@ -10,6 +10,9 @@ let initials = document.getElementById("initals");
 let currentScore = document.getElementById("finalscore");
 let currentScoreSubmitBtn = document.getElementById("submit");
 let clearBtn = document.getElementById("clear");
+let highscoresSavedDiv = document.getElementById("highscoresSaved");
+let initialsSavedDiv = document.getElementById("initialsSaved");
+
 //Initially timerCountDown variable will be undefined
 let timerCountDown;
 let timerEl = document.getElementById('timer');
@@ -157,6 +160,7 @@ highScoresBtn.addEventListener('click', function (event) {
   quizSection.classList.add("hide");
   //Hides the Instructions
   instructions.classList.add("hide");
+  sessionScore.classList.remove("show");
   //Hides the Session Score Section 
   sessionScore.classList.add("hide");
   //Shows the High Score List
@@ -169,9 +173,9 @@ highScoresBtn.addEventListener('click', function (event) {
   if (highscoreSaved === null || initalsSaved === null) {
     return;
   }
-  
-  userEmailSpan.textContent = email;
-  userPasswordSpan.textContent = password;
+
+  highscoresSavedDiv.textContent = highscoreSaved;
+  initialsSavedDiv.textContent = initialsSaved;
 
   //Clear high scores to clear local storage
   clearBtn.addEventListener('click', function (event) {
