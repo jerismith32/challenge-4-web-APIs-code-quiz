@@ -195,7 +195,7 @@ function endQuiz() {
     let initials = document.getElementById("initials");
     localStorage.setItem('score', score);
     let saveInitials = initials.value;
-    console.log('initials', saveInitials);
+    //console.log('initials', saveInitials);
     localStorage.setItem('initials', saveInitials);
   })
 }

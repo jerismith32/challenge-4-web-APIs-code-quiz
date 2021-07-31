@@ -30,6 +30,10 @@ THEN I can save my initials and score
 * Bootstrap
 * Javascript
 
+## Deployed Link
+[Challenge 4 Web API Code Quiz](https://jerismith32.github.io/challenge-4-web-APIs-code-quiz/)
+
+
 ## Screenshots
 Home Page of the Coding Quiz
 ![Home Page of the Coding Quiz](/assets/images/HomepageQuiz.png)
